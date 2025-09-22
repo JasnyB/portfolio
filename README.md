@@ -36,4 +36,4 @@ By rebuilding it, I challenged myself to:
 
 ---
 
-📌 Live demo: [https://jasnyb.github.io/cv/](https://jasnyb.github.io/cv/)
+📌 Live demo: [https://jasnyb.github.io/cv/](https://jasnyb.github.io/portfolio/)
