@@ -1,4 +1,4 @@
-# portfolio
+# 🌐 Personal CV & Portfolio Website
 This repository contains my personal CV and portfolio website.  
 It’s a complete redesign of my old homepage — I wasn’t satisfied with the previous version, so I decided to rebuild everything from scratch with a more **modern, responsive design** and better structure.
 
@@ -33,13 +33,6 @@ By rebuilding it, I challenged myself to:
 - Improve **responsiveness and usability**
 - Gain experience working with **multiple pages, shared navigation, and assets**
 - Showcase not just my experience, but also my growth as a developer
-
----
-
-## 🚀 Future improvements
-- Add more interactivity (e.g. animations, project demos)  
-- Connect the contact form to a backend/email service  
-- Keep updating with new projects and skills  
 
 ---
 
