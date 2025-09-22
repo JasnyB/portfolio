@@ -1,0 +1,39 @@
+/* Database page layout */
+.database-section {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.database-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.database-section p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Video player  */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* video */
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,101 @@
+/* Name above navbar  */
+.page-title{
+    position:center;
+    padding-top: 10px;
+    top: 8px;
+    left: 0;right: 0;
+    z-index:1100;
+      pointer-events:none;
+}
+.page-title .title-inner{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 20px;
+    text-align:center;
+}
+.page-title h1{
+    font-size:20px;
+    font-weight:700;
+    color:var(--text-dark);
+    letter-spacing:2px;
+    margin:0;
+}
+
+
+/* Hero vanta.js */
+.hero {
+    position: relative;
+    height: var(--hero-height);
+    margin-top:120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#vanta-bg {
+    position: absolute;
+    inset:0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-content{
+    z-index:1;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 8px 24px rgba(0,0,0,0.55);
+
+}
+
+/* Projects section */
+.projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 1000px;
+    padding: 0 2rem;
+}
+
+.project-card {
+    background-color: #f8f6f0; /* Beige from homepage */
+    padding: 2rem;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: none; /* modern flat style */
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    color: #0077b6; /* Same blue as socials box */
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.project-card .btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.project-card .btn:hover {
+    background: #005f86;
+}

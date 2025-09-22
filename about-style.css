@@ -1,0 +1,187 @@
+/* Vanta.js hero  */
+.hero {
+    position: relative;
+    height: 60vh; /* only 60% of screen height now */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#vanta-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 8px 24px rgba(0,0,0,0.55);
+}
+
+/* About section below hero */
+.about-section {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Page layout */
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 3rem auto;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* About me dropdowns */
+.about-dropdowns {
+    flex: 2; /* takes ~65% */
+    max-width: 750px;
+}
+
+/* Dropdown button */
+.dropdown-btn {
+    background: #3b5bfd;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.dropdown-btn:hover {
+    background: #2e47c8;
+    transform: translateX(4px);
+}
+
+/* Arrow indicator */
+.dropdown-btn::after {
+    content: '\25BC';
+    font-size: 0.9rem;
+    transition: transform 0.3s;
+}
+
+.dropdown-btn.active::after {
+    transform: rotate(180deg);
+}
+
+/* Dropdown content */
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    background: #f5f1e6; /* beige */
+    margin-bottom: 1rem;
+    padding: 0 1.5rem;
+    border-left: 4px solid #3b5bfd;
+
+}
+
+.dropdown-content p {
+    margin: 1rem 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+
+/* Skills dropdown layout */
+
+/* Solution from ChatGPT to force the skills section to collapse
+when the page loads */
+.dropdown-content.skills-section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px;
+}
+
+.skills-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.skills-column h3 {
+    border-bottom: 1px solid rgba(255, 255,255, 0.2);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.skills-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-column li {
+    margin-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+/* Profile card */
+.about-side {
+    flex: 1; /* takes ~35% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 350px;
+}
+
+.about-side img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid #3b5bfd;
+}
+
+.about-side h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.about-side p {
+    font-size: 0.95rem;
+    color: #555;
+    text-align: center;
+    max-width: 300px;
+}
+
+
+

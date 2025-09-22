@@ -1,0 +1,198 @@
+/* --------------------------
+   index-style.css
+   Modern homepage layout
+   -------------------------- */
+
+/* Variables */
+:root{
+  --accent: #00bfff;
+  --nav-bg: rgba(255,255,255,0.86);
+  --nav-border: rgba(0,0,0,0.06);
+  --text-dark: #111;
+  --muted: #666;
+  --hero-height: 340px;
+}
+
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:#f5f6f8;
+  color:var(--text-dark);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+/* ---------- header above navbar ---------- */
+.page-title{
+  position:center;
+  padding-top: 10px;
+  top: 8px;
+  left: 0;right: 0;
+  z-index:1100;
+  pointer-events:none;
+}
+.page-title .title-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 20px;
+  text-align:center;
+}
+.page-title h1{
+  font-size:20px;
+  font-weight:700;
+  color:var(--text-dark);
+  letter-spacing:2px;
+  margin:0;
+}
+
+/* ---------- Navbar ---------- */
+.navbar{
+  position:fixed;
+  top:56px; /* below name */
+  left:0;right:0;
+  z-index:1090;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:var(--nav-bg);
+  backdrop-filter: blur(6px);
+  border-bottom:1px solid var(--nav-border);
+  padding:10px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* nav links layout */
+.nav-links{ list-style:none; display:flex; gap:14px; align-items:center; margin:0; padding:0; }
+.nav-links li{ display:block; }
+
+/* Parallelogram buttons in navbar */
+.nav-links a{
+  display:block;
+  text-decoration:none;
+  transform: skew(-18deg);
+  transition: background-color .22s ease, color .18s ease, transform .18s ease;
+  padding:8px 16px;
+  color:var(--text-dark);
+  font-weight:600;
+  background:transparent;
+  border-radius:0;
+}
+.nav-links a span{ display:inline-block; transform: skew(18deg); }
+
+.nav-links a:hover{
+  background: rgba(220,220,220,0.8);
+  color:var(--text-dark);
+  transform: skew(-18deg) translateY(-2px);
+  cursor:pointer;
+}
+
+.nav-links a:focus{ outline:2px solid rgba(0,191,255,0.18); outline-offset:2px; }
+
+/* ---------- Hero vanta.js ---------- */
+#hero{
+  position:relative;
+  height:var(--hero-height);
+  margin-top:120px; /* space for name + navbar */
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+/* Vanta behind content */
+#vanta-bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  z-index:0;
+}
+
+/* slogans centered */
+.slogan-container{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  max-width:1000px;
+  padding:0 20px;
+}
+#slogan{
+  font-size:28px;
+  color:#fff;
+  font-weight:700;
+  text-shadow: 0 8px 24px rgba(0,0,0,0.55);
+  transition: opacity .8s ease;
+  opacity:1;
+}
+
+/* container with socials */
+.content{
+  max-width:1100px;
+  margin:40px auto 120px;
+  padding:0 20px;
+  display:flex;
+  gap:24px;
+  align-items:flex-start;
+}
+
+/* About this page container */
+.info-box{
+  flex:2;
+  background:#f5f2e6; /* beige */
+  color:var(--text-dark);
+  padding:28px;
+  border:0;
+  border-radius:0; /* flat corners */
+  box-shadow: 0 18px 40px rgba(0,0,0,0.10);
+}
+.info-box h2{ margin-bottom:12px; font-size:20px; font-weight:700; }
+.info-box p{ color:#333; margin-bottom:10px; }
+
+/* Socials box  */
+.socials-box{
+  flex:1;
+  background:#007acc; /* modern blue */
+  color:#fff;
+  padding:28px;
+  border:0;
+  border-radius:0;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+.socials-box h2{ font-size:18px; margin-bottom:12px; color:#fff; }
+.social-list{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px; }
+.social-list a{ color:#fff; text-decoration:none; font-weight:600; display:inline-flex; gap:8px; align-items:center; }
+.social-list a i{ width:18px; text-align:center; }
+
+/* PB in socials box*/
+.socials-box .profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;   /* makes it a circle */
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white; /* optional, gives a clean frame */
+}
+
+
+
+/* Responsive behaviour (help from ChatGPT) */
+@media (max-width: 900px){
+  .navbar{ padding:10px 12px; }
+  #slogan{ font-size:20px; }
+  .content{ flex-direction:column; gap:18px; margin-top:24px; padding:0 18px; }
+  .info-box, .socials-box{ width:100% }
+  .page-title .title-inner{ padding:0 12px }
+}
+
+/* small polish: ensure hero text doesn't wrap horribly (ChatGPT)*/
+@media (max-width:420px){
+  #slogan{ font-size:18px; padding:0 8px;}
+}

@@ -1,0 +1,115 @@
+
+
+/* Vanta.js hero */
+.hero {
+    position: relative;
+    height: 60vh; /* only 60% of screen height now */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#vanta-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 8px 24px rgba(0,0,0,0.55);
+}
+
+/* Contact container layout */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+/* formspree.io, contact form layout */
+.contact-section {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    background: #3b5bfd;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #2a48d3;
+}
+
+/* Contact card, right side */
+.contact-info {
+    flex: 1;
+    background: #f5f2e6; /* beige */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-info h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-links a {
+    color: #3b5bfd;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,95 @@
+
+.page-title{
+    position:center;
+    padding-top: 10px;
+    top: 8px;
+    left: 0;
+    right: 0;
+    z-index:1;
+    pointer-events:none;
+}
+
+.page-title .title-inner{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding:0 20px;
+    text-align: center;
+}
+
+.page-title h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.hero{
+    position: relative;
+    height: var(--hero-height);
+    margin-top: 120px;
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+.hero-content{
+    z-index:1;
+    position:absolute;
+}
+
+.hero-content h1 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 8px 24px rgba(0,0,0,0.55);
+}
+
+/* Reference card section */
+
+.ref-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 1000px;
+    padding: 0 2rem;
+}
+.ref-card{
+    background-color: #f8f6f0;
+    padding: 2rem;
+    flex: 1;
+    min-width: 310px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: none;
+    text-align: center;
+}
+
+.ref-card h2 {
+    font-size: 1.2rem;
+    color: #0077b6;
+    margin-bottom: 1rem;
+}
+
+.ref-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.ref-card i {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.ref-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
